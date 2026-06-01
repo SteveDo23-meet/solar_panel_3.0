@@ -81,5 +81,6 @@ export const applyRoiEstimates = <TCandidate extends RoiCandidate>(
   candidates: TCandidate[]
 ): Array<TCandidate & RoiEstimate> => candidates.map((candidate) => ({ ...candidate, ...estimateRoi(candidate) }));
 
-export const getRoiPlanningNote = () =>
-  'ROI values are planning estimates and should be validated by an engineering survey.';
+export const getRoiPlanningNote = () => {
+  return 'ROI values are planning estimates and should be validated by an engineering survey.';
+};
