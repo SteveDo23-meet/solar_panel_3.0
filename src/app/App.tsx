@@ -54,6 +54,7 @@ export const App: React.FC = () => {
         className="absolute inset-x-3 bottom-3 z-30 max-h-[42vh] overflow-y-auto md:hidden"
       >
         <div className="space-y-3">
+          <ScoringSettings />
           <StatsCards />
           <MultiAreaComparison />
           <TopLocations limit={2} />
